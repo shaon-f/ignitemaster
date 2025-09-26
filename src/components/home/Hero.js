@@ -49,7 +49,7 @@ const Hero = () => {
                                     className="fade-in-section heroMainHeading"
                                     style={{ animationDelay: "0.4s" }}
                                 >
-                                    <h3 className="SubHeading">Welcome to Ignite</h3>
+                                    <h3 className="SubHeading">Welcome to Ignite 111</h3>
                                 </div>
                                 <div
                                     data-scroll
