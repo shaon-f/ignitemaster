@@ -1,0 +1,51 @@
+// src/pages/_app.js
+
+import "@/styles/globals.css";
+//Home Page Css
+import "@/styles/home/Hero.css";
+import "@/styles/home/Course.css";
+import "@/styles/home/About.css";
+import "@/styles/home/Test.css";
+import "@/styles/home/MovingBanner.css";
+import "@/styles/home/Subjects.css";
+import "@/styles/home/Alumni.css";
+import "@/styles/home/Usps.css";
+import "@/styles/home/Trainers.css";
+import "@/styles/home/Testimonial.css";
+import "@/styles/home/BlogSection.css";
+//import "@/styles/blog/BlogPage.css";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+import { useRouter } from "next/router";
+import Home from "./Home";
+import IBDP from "./ibdp";
+import Blog from "./Blog";
+
+export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
+  let RenderedComponent = null;
+
+  if (router.pathname === "/") {
+    RenderedComponent = <Home />;
+  } else if (router.pathname === "/ibdp") {
+    RenderedComponent = <IBDP />;
+  } else if (router.pathname === "/blog") {
+    RenderedComponent = <Blog />;
+  } else {
+    // This is the default rendering for any other page that doesn't have a specific
+    // entry in your custom routing (e.g., if you add more pages later without updating _app.js)
+    RenderedComponent = <Component {...pageProps} />;
+  }
+
+  return (
+    <>
+      <Header />
+      {RenderedComponent}
+      <Footer />
+    </>
+  );
+}

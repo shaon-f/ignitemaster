@@ -1,0 +1,493 @@
+.testimonialSection {
+  padding: 40px 0;
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.testimonialSection .testimonialHeader {
+  margin: 20px 0;
+}
+
+.testimonialSection .testimonialBgBox {
+margin-bottom: 35px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonialSection .testimonialRect {
+  position: absolute;
+  pointer-events: none;
+}
+
+.testimonialSection .testimonialRect:nth-child(1) {
+  top: 20%;
+  left: 0;
+  width: 100%;
+  max-width: 250px;
+  height: 80px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 0 25px 25px 0;
+}
+
+.testimonialSection .testimonialRect:nth-child(2) {
+  top: 60%;
+  left: 0;
+  width: 100%;
+  max-width: 550px;
+  height: 80px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 0 25px 25px 0;
+}
+
+.testimonialSection .testimonialRect:nth-child(3) {
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 80px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 0 20px 20px 0;
+  transform: rotate(180deg);
+}
+
+.testimonialSection .googlelogo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.testimonialSection .testimonialTitle {
+  color: var(--blue-color);
+  font-size: 1.8rem;
+  font-weight: 800;
+  max-width: 35%;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 20px auto;
+}
+
+.testimonialSection .googleReview {
+  font-size: 1.4vw;
+  color: var(--blue-color);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.testimonialSection .googleReview span {
+  color: var(--lightgreen-color);
+}
+
+.testimonialSection .starReview {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.testimonialSection .testimonialSliderWrap {
+  position: relative;
+  height: 550px;
+  z-index: 2;
+}
+
+.testimonialSection .testimonialNavBtn {
+  background: #1a2a49;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+  margin: 0 16px;
+}
+
+.testimonialSection .testimonialNavBtn:hover {
+  background: #3a7bbd;
+}
+
+.testimonialSection .testimonialSwiper {
+  width: 100%;
+  max-width: 85vw;
+}
+
+.testimonialSection .testimonialSwiper :global(.swiper-wrapper) {
+  height: 450px;
+}
+
+.testimonialSection .testimonialCard {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 0;
+  height: 100%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonialSection .testimonialCardVideo {
+  background: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.testimonialSection .testimonialCardGraduate {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonialSection .testimonialCardText {
+  background: #eaf8ff;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #4dbd92;
+}
+
+.testimonialSection .testimonialImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 32px;
+  display: block;
+}
+
+.testimonialSection .testimonialPlayBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.testimonialSection .testimonialVideoText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px 40px;
+  background: linear-gradient(to top, var(--blue-color), transparent);
+  width: 100%;
+  height: 50%;
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: start;
+  justify-content: end;
+}
+
+.testimonialSection .testimonialText {
+  font-size: 1vw;
+  text-align: start;
+  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.8px;
+}
+
+.testimonialSection .testimonialTextName {
+  font-size: 1vw;
+  font-weight: 500;
+  color: var(--black-color);
+  margin-bottom: 4px;
+}
+
+.testimonialSection .testimonialTextSubtitle {
+  font-size: 1vw;
+  color: var(--black-color);
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.testimonialSection .testimonialPagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 24px;
+}
+
+.testimonialSection .testimonialPagination span {
+  width: 10px;
+  height: 5px;
+  border-radius: 4px;
+}
+
+.testimonialSection .testimonialSliderWrap button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  scale: 1.1;
+}
+
+.testimonialSection .testimonialSliderWrap button:after {
+  display: none;
+}
+
+.testimonialSection .testimonialSliderWrap .swiper-button-prev {
+  left: 3%;
+}
+
+.testimonialSection .testimonialSliderWrap .swiper-button-next {
+  right: 3%;
+}
+
+@media (max-width: 1199px) {
+  .testimonialSection .testimonialTitle {
+    font-size: 2rem;
+  }
+
+  .testimonialSection .testimonialText,
+  .testimonialSection .testimonialTextName,
+  .testimonialSection .testimonialTextSubtitle {
+    font-size: 1rem;
+  }
+
+  .testimonialSection .testimonialTitle {
+    max-width: 600px;
+    font-size: 32px;
+  }
+
+  .testimonialSection .googleReview {
+    font-size: 20px;
+  }
+
+  .testimonialSection .testimonialRect:nth-child(1) {
+    top: 0;
+    max-width: 35%;
+  }
+
+  .testimonialSection .testimonialRect:nth-child(2) {
+    display: none;
+  }
+
+  .testimonialSection .testimonialRect:nth-child(3) {
+    top: 80%;
+    max-width: 35%;
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonialSection {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonialSection .testimonialTitle {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .testimonialSection .testimonialSwiper {
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonialSection .testimonialCardText {
+    padding: 20px;
+  }
+
+  .testimonialSection .testimonialText {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonialSection .testimonialRect {
+    height: 70px !important;
+  }
+  .btntest{
+    position:relative;
+    bottom: .5rem;
+  }
+  .testimonialSection .testimonialSliderWrap {
+  position: relative;
+  height: 385px;
+  z-index: 2;
+}
+
+  .testimonialSection .testimonialRect:nth-child(1) {
+    max-width: 30%;
+    top: -20px;
+  }
+
+  .testimonialSection .testimonialRect:nth-child(3) {
+    max-width: 25%;
+    top: 65%;
+  }
+
+  .testimonialSection .testimonialTitle {
+    font-size: 1.4rem;
+  }
+
+  .testimonialSection .googlelogo,
+  .testimonialSection .starReview {
+    max-width: 150px;
+  }
+
+  .testimonialSection .testimonialSwiper :global(.swiper-wrapper) {
+    height: 400px;
+  }
+
+  .testimonialSection .testimonialVideoText {
+    padding: 20px;
+  }
+
+  .testimonialSection .testimonialText {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: -webkit-box;
+  -webkit-line-clamp: 17; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+  .testimonialSection .testimonialPagination {
+    margin-top: 75px;
+  }
+
+  .testimonialSection .testimonialSliderWrap .swiper-button-prev {
+    top: 90%;
+    left: 44%;
+  }
+
+  .testimonialSection .testimonialSliderWrap .swiper-button-next {
+    top: 90%;
+    right: 44%;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonialSection .testimonialText {
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .testimonialSection .testimonialSliderWrap .swiper-button-prev {
+    left: 40%;
+  }
+
+  .testimonialSection .testimonialSliderWrap .swiper-button-next {
+    right: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonialSection .testimonialCardText {
+    padding: 15px;
+  }
+
+  .testimonialSection .testimonialText {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 440px) {
+  .testimonialSection .testimonialText {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 420px) {
+  .testimonialSection .testimonialText {
+    font-size: 14.5px !important;
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1368px) {
+  .testimonialSection .testimonialText {
+    font-size: 16.7px !important;
+    line-height: 0.9;
+  }
+}
+
+@media (max-width: 379px) {
+  .testimonialSection .testimonialText {
+    font-size: 13px;
+    line-height: 0.9;
+
+  }
+}
+
+/* Add this CSS to fix 125% scale issues on 1920px resolution */
+
+/* Media query for 1920px at 125% scale (effective viewport ~1536px) */
+@media screen and (min-width: 1536px) and (max-width: 1600px) {
+  .testimonialSection .testimonialSliderWrap {
+    height: 440px; /* Reduced from 550px */
+  }
+
+  .testimonialSection .testimonialSwiper :global(.swiper-wrapper) {
+    height: 360px; /* Reduced from 450px */
+  }
+
+  .testimonialSection .testimonialCard {
+    max-height: 400px; /* Reduced from 500px */
+  }
+
+  .testimonialSection .testimonialText {
+    font-size: 1rem; /* Fixed size instead of 1vw */
+    line-height: 1.5;
+    margin-bottom: 20px; /* Reduced from 24px */
+  }
+
+  .testimonialSection .testimonialTextName {
+    font-size: 0.85rem; /* Fixed size instead of 1vw */
+  }
+
+  .testimonialSection .testimonialTextSubtitle {
+    font-size: 0.8rem; /* Fixed size instead of 1vw */
+  }
+
+  .testimonialSection .testimonialCardText {
+    padding: 30px 40px; /* Reduced from 40px 50px */
+  }
+
+  .testimonialSection .testimonialVideoText {
+    padding: 25px 35px; /* Reduced from 30px 40px */
+    height: 45%; /* Reduced from 50% */
+  }
+
+  .testimonialSection .googleReview {
+    font-size: 18px; /* Fixed size instead of 1.4vw */
+  }
+
+  .testimonialSection .testimonialTitle {
+    font-size: 32px; /* Fixed size instead of 1.8rem */
+    line-height: 1.1;
+  }
+}
+@media (max-width: 390px) {
+    .btntest {
+        position: relative;
+        bottom: 2rem;
+    }
+}

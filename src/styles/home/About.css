@@ -1,0 +1,396 @@
+/* About Us Section  */
+
+.aboutSection {
+  margin: 80px 0;
+}
+
+.aboutSection .aboutSectionInner {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutSection .aboutLeft {
+  display: flex;
+  align-items: flex-end;
+  min-width: 340px;
+  position: relative;
+}
+
+.aboutSection .aboutImageWrap {
+  padding-right: 50px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutSection .aboutImageWrap .rectangleBG {
+  position: absolute;
+  z-index: -1;
+  width: auto;
+  height: 12%;
+}
+
+.aboutSection .aboutImageWrap .rectangleBG:nth-child(1) {
+  top: 20px;
+  left: -20px;
+}
+
+.aboutSection .aboutImageWrap .rectangleBG:nth-child(2) {
+  bottom: 45%;
+  right: 20px;
+}
+
+.aboutSection .aboutImageWrap .rectangleBG:nth-child(3) {
+  bottom: 30%;
+  right: -20px;
+}
+
+.aboutSection .aboutImageWrap .rectangleBG:nth-child(4) {
+  bottom: 15%;
+  right: 20px;
+}
+
+.aboutSection .aboutImage {
+  width: 75%;
+  height: 100%;
+  border-radius: 32px;
+  object-fit: contain;
+}
+
+.aboutSection .statCard {
+  position: absolute;
+  background: linear-gradient(to right, var(--border-color), #e7f6ff);
+  border: 4px solid var(--white-color);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  padding: 30px 20px;
+  width: 47%;
+  height: 32%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.aboutSection .statCardYears {
+  top: 10%;
+  right: -30px;
+  width: max-content;
+}
+
+.aboutSection .statCardResources {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--green-text), #e7f6ff);
+}
+
+.aboutSection .statBig {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: var(--blue-color);
+}
+
+.aboutSection .statSmall {
+  color: var(--blue-color);
+  font-size: 1vw;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.aboutSection .verticalLabel {
+  position: absolute;
+  right: 90%;
+  bottom: 40%;
+  color: var(--blue-color);
+  writing-mode: sideways-lr;
+  transform: rotate(180deg);
+  font-size: 1.2vw;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.aboutSection .verticalLabel span {
+  color: var(--lightgreen-color);
+}
+
+.aboutSection .aboutRight {
+  flex: 1.2;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.aboutSection .aboutHeading {
+  display: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.aboutSection .aboutHeadingRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.aboutSection .aboutHeadingRow span {
+  font-size: 25px;
+}
+
+.aboutSection .aboutTitle {
+  font-size: 2vw;
+  font-weight: 800;
+  color: var(--blue-color);
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.aboutSection .aboutHighlight {
+  background: linear-gradient(to right,
+      var(--lightgreen-color),
+      var(--green-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+.aboutSection .aboutDesc {
+  font-size: 1vw;
+  color: #7a8ca3;
+  margin-bottom: 18px;
+  max-width: 90%;
+  line-height: 1.6;
+}
+
+.aboutSection .aboutStatsRow {
+  display: flex;
+  gap: 48px;
+  border-top: 2px solid #e6f6ff;
+  padding-top: 18px;
+}
+
+.aboutSection .aboutStatsRow .aboutStatBorder {
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(var(--border-color), #e7f6ff);
+  border-radius: 5px;
+  opacity: 0.5;
+  display: none;
+}
+
+.aboutSection .aboutStatBlock {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.aboutSection .aboutStatBig {
+  font-size: 2vw;
+  font-weight: 800;
+  background: linear-gradient(to right,
+      var(--lightgreen-color),
+      var(--green-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.04em;
+}
+
+.aboutSection .aboutStatLabel {
+  font-size: 1vw;
+  color: var(--blue-color);
+  font-weight: 600;
+  opacity: 0.8;
+  max-width: 250px;
+}
+
+.aboutSection .aboutBtn {
+  margin-top: 30px;
+  width: max-content;
+}
+
+@media (max-width: 1199px) {
+  .aboutSection .statSmall {
+    font-size: 1rem;
+  }
+
+  .aboutSection .aboutTitle {
+    font-size: 1.8rem;
+  }
+
+  .aboutSection .aboutDesc {
+    font-size: 0.9rem;
+  }
+
+  .aboutSection .aboutStatLabel {
+    font-size: 0.8rem;
+  }
+
+  .aboutSection .aboutBtn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutSection .aboutImageWrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .aboutSection .aboutImage {
+    height: 100%;
+  }
+
+  .aboutSection .statCard {
+    height: 25%;
+  }
+
+  .aboutSection .verticalLabel {
+    font-size: 1rem;
+  }
+
+  .aboutSection .statBig {
+    font-size: 1.5rem;
+  }
+
+  .aboutSection .aboutHeading {
+    display: block;
+  }
+
+  .aboutSection .aboutHeadingRow span {
+    display: none;
+  }
+
+  .aboutSection .aboutRight,
+  .aboutSection .aboutStatsRow,
+  .aboutSection .aboutStatBlock {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutSection .aboutTitle,
+  .aboutSection .aboutDesc,
+  .aboutSection .aboutStatLabel {
+    text-align: center;
+  }
+
+  .aboutSection .aboutStatsRow {
+    gap: 20px;
+  }
+
+  .aboutSection .aboutStatBig {
+    font-size: 2.5rem;
+  }
+
+  .aboutSection .aboutStatLabel {
+    font-size: 1rem;
+  }
+
+  .aboutSection .aboutStatsRow .aboutStatBorder {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutSection .aboutLeft {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutSection {
+    margin: 80px 0;
+  }
+
+  .aboutSection .statCard {
+    height: max-content;
+    padding: 30px;
+  }
+
+  .aboutSection .statCardYears {
+    width: 45%;
+    right: 0;
+  }
+
+  .aboutSection .aboutImageWrap {
+    padding-right: 20px;
+  }
+
+  .aboutSection .verticalLabel {
+    font-size: 14px;
+    top: 0;
+    bottom: 40%;
+  }
+
+  .aboutSection .aboutRight {
+    gap: 10px;
+  }
+
+  .aboutSection .aboutTitle {
+    font-size: 1.5rem;
+  }
+
+  .aboutSection .statBig {
+    font-size: 25px;
+  }
+
+  .aboutSection .aboutStatBig {
+    font-size: 2rem;
+  }
+
+  .aboutSection .aboutStatLabel {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:500px) {
+  .aboutSection .statCard {
+    padding: 25px;
+  }
+
+  .aboutSection .statBig {
+    font-size: 22px;
+  }
+
+  .aboutSection .statSmall {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width:425px) {
+  .aboutSection .statCard {
+    padding: 22px;
+  }
+
+  .aboutSection .statBig {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .aboutSection .aboutSectionInner {
+    overflow: hidden;
+  }
+
+  .aboutSection .statCard {
+    padding: 10px;
+  }
+
+  .aboutSection .statBig {
+    font-size: 18px;
+  }
+}

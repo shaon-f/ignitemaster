@@ -1,0 +1,335 @@
+/* Custom CSS for WordPress Posts Component */
+
+/* --- General Layout & Loading --- */
+.min-height-300px {
+    min-height: 300px;
+}
+
+/* --- Search Section --- */
+.searchBox {
+    margin-top: 100px;
+}
+
+.searchBox .searchbar {
+    height: 70px;
+    color: #161664;
+    font-weight: 700;
+    padding-left: 30px;
+    border: 1px solid #233467;
+}
+
+.searchBox .searchbar::placeholder {
+    color: #233467;
+    opacity: 1;
+    /* Firefox */
+}
+
+.searchBox button {
+    background: none;
+    border: 0;
+    padding-right: 30px;
+}
+
+.searchBox svg {
+    color: #161664;
+}
+
+.search-input-height {
+    height: 70px;
+    /* Reduced height for search input */
+}
+
+.search-button-style {
+    height: 70px;
+    /* Explicitly set height to match input */
+    z-index: 2;
+    /* Ensure button is above input */
+    background: linear-gradient(to right, #60A5FA, #3B82F6);
+    /* Example gradient, adjust as needed */
+    border: none;
+    /* Remove default button border */
+}
+
+
+/* --- Category Buttons --- */
+.categoryList {
+    margin-bottom: 100px;
+}
+
+.category-buttons-container {
+    /* Using negative margins to achieve precise spacing with flex-wrap */
+    margin-left: -20px;
+    /* Half of desired column-gap (40px / 2) */
+    margin-top: -10px;
+    /* Half of desired row-gap (20px / 2) */
+}
+
+.category-button {
+    border-radius: 10px !important;
+    background-color: white;
+    border: 2px solid transparent;
+    /* Gradient border effect */
+    background-image: linear-gradient(white, white), linear-gradient(to right, #161664, #3F88BA);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    /* Ensures content centers vertically */
+    align-items: center;
+    justify-content: center;
+    /* Explicit margins for spacing between buttons */
+    font-size: 25px !important;
+    color: #233467 !important;
+    padding: 10px 30px !important;
+    line-height: 35px !important;
+    font-weight: 500 !important; 
+    margin: 0;
+
+}
+
+.category-button:hover {
+    color: #233467;
+    /* Keep text color consistent on hover for unselected */
+    /* Re-apply gradient border on hover to ensure it doesn't disappear */
+    background-image: linear-gradient(white, white), linear-gradient(to right, #161664, #3F88BA);
+}
+
+.category-button-selected {
+    background-image: linear-gradient(to right, #161664, #3F88BA);
+    /* Fill with gradient when selected */
+    color: white !important;
+    /* White text when selected */
+    border: none;
+    /* No border when selected, gradient fills fully */
+}
+
+.category-button-selected:hover {
+    color: white !important;
+    /* Keep text white on hover when selected */
+    /* Ensure gradient fill remains on hover when selected */
+    background-image: linear-gradient(to right, #161664, #3F88BA);
+}
+
+/* --- Post Cards --- */
+.postsList {
+    /* This class is already applied to a div that has Bootstrap classes:
+       row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4
+       You can add more specific styles here if needed. */
+}
+
+
+
+.featured-image-style {
+    height: 224px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.read-more-button {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(to right, #60A5FA, #3B82F6);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Social icon hover colors */
+/* These use nth-child to target specific icons if they are always in the same order */
+.social-icon-hover:hover {
+    color: #0d6efd !important;
+    /* Facebook blue */
+}
+
+.social-icon-hover:nth-child(2):hover {
+    color: #212529 !important;
+    /* X (Twitter) dark */
+}
+
+.social-icon-hover:nth-child(3):hover {
+    color: #dc3545 !important;
+    /* Email red */
+}
+
+.social-icon-hover:nth-child(4):hover {
+    color: #198754 !important;
+    /* Copy link green */
+}
+
+/* Optional: Additional styling for card elements if needed, not explicitly requested but good practice */
+.card.rounded-4 {
+    border-radius: 0.5rem !important;
+    /* Bootstrap's rounded-4 is 0.5rem */
+}
+
+.card-img-top.rounded-top-4 {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+    /* margin: 15px; */
+}
+
+.col{
+    position: relative;
+}
+.postsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:40px;
+}
+.card {
+  border: 2px solid #dbe5ff;
+  border-radius: 30px !important;
+  overflow: hidden;
+  position: relative;
+  padding: 25px 25px 16px;
+  background: rgb(255,255,255);
+  font-family: 'Poppins', sans-serif;
+    margin: 0 !important;
+}
+.col svg{
+    width: 100%;
+    left: 0;
+    top:0;
+    object-fit: cover;
+}
+.card .card-img-top {
+  width: 100%;
+  border-radius: 30px;
+  height: 350px;
+}
+
+.card .card-body-text {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem 0;
+    color: var(--bs-card-color);
+}
+ 
+.card .card-subtitle {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #233467d9;
+}
+
+.card .card-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 8px 0;
+  color: #233467;
+  width: 80%;
+}
+
+.card .card-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: #233467d9;
+  width: 80%;
+}
+
+.card a.btn-primary { 
+  position: absolute;
+  bottom: -37px;
+  right: -25px;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(to left, #E7F6FF, #A3CAF5);
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+.card a.btn-primary svg{
+    fill: #233467;
+}
+.full-width-image-wrapper{
+    position: relative;
+}
+.banner-text{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    z-index: 10;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    background: linear-gradient(to left, #EDFFF4, #A6EAC7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.blog-breadcrumb {
+    position: absolute; 
+    bottom: 70px;     
+    left: 50px;
+    z-index: 10;      
+    width: fit-content; 
+}
+.blog-breadcrumb .breadcrumb {
+    margin-bottom: 0; 
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.blog-breadcrumb .breadcrumb-item {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff; 
+}
+.blog-breadcrumb .breadcrumb-item a {
+    color: #fff; 
+    text-decoration: none;
+}
+.blog-breadcrumb .breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+.blog-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "/\00a0 /\00a0"; 
+    color: #fff;
+}
+.blog-breadcrumb .breadcrumb-item.active {
+    color: #fff; 
+}
+@media(max-width: 991px){
+    .postsList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:40px;
+    }
+}
+
+@media(max-width: 767px){
+    .postsList{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:40px;
+    }
+    .card .card-img-top {
+        height: 200px;
+    }
+    .card .card-title {
+        font-size: 20px;
+    }
+    .card .card-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .card{
+        padding: 20px 20px 16px;
+    }
+    .card a.btn-primary {
+        bottom: -28px;
+        right: -36px;
+        width: 60px;
+        height: 60px;
+    }
+    .card .card-subtitle {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+}
+
+
