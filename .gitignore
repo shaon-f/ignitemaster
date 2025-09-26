@@ -1,0 +1,46 @@
+# ---------------------------------------------------------------------- #
+# DEPENDENCIES AND BUILD ARTIFACTS
+# ---------------------------------------------------------------------- #
+
+# Node modules directory
+/node_modules
+
+# Next.js build output, cache, and traces
+/.next/
+/out/
+/dist/
+/build/
+
+# Package manager lockfile (optional, but package-lock.json is usually kept)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ---------------------------------------------------------------------- #
+# ENVIRONMENT VARIABLES AND SECRETS
+# ---------------------------------------------------------------------- #
+
+# Local environment variables and secrets (NEVER commit these)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ---------------------------------------------------------------------- #
+# OPERATING SYSTEM AND EDITOR FILES
+# ---------------------------------------------------------------------- #
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# VS Code directory (Contains workspace settings, extensions, etc.)
+# UNCOMMENT the line below if you do NOT want to share VS Code settings
+# /.vscode/
